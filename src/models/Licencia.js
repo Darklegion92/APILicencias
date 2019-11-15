@@ -20,6 +20,10 @@ const licenciaSchema = new Schema({
     activa: {
         type:Boolean,
         required:true
+    },
+    equipo:{
+        type:String,
+        uppercase:true,
     }
 })
 
