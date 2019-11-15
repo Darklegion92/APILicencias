@@ -4,7 +4,7 @@ const Licencia = require("../models/Licencia");
 async function validar(req, res) {
   res.setHeader("Content-Type", "application/json");
   
-  const licencias = await Licencia.findOneAndUpdate({key:req.body.key},{activa:"false"}).catch(err =>
+  const licencias = await Licencia.findOneAndUpdate({key:req.body.key},{activa:"false",equipo:req.body.serial}).catch(err =>
     res.status(500).send({ err })
   );
   
