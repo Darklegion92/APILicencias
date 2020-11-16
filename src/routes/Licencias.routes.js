@@ -1,8 +1,8 @@
-const {Router} = require('express')
+const { Router } = require('express')
 const LicenciaCtrl = require('../controllers/Licencia.controller')
 
-router = Router();
+router = Router()
 router
-    .post('/validar',LicenciaCtrl.validar)
-    
-module.exports = router;
+  .post('/validar', LicenciaCtrl.validar)
+  .post('/registrar', LicenciaCtrl.registrar)
+module.exports = router
