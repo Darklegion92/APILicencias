@@ -10,7 +10,7 @@ var corsOptions = {
 }
 
 module.exports = {
-  PORT: process.env.PORT || 80,
+  PORT: process.env.PORT || 8081,
   DB: process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/licencias',
   corsOptions: corsOptions,
   SECRET_TOKEN: 'SOLTEC-tecnologiaydesarrollo$',
