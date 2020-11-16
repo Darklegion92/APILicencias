@@ -28,10 +28,12 @@ const licenciaSchema = new Schema({
   fechaCreacion: {
     type: Date,
     required: true,
-    default: new Date()
+    default: new Date(),
+    select: false
   },
   fechaActivacion: {
-    type: Date
+    type: Date,
+    select: false
   }
 })
 
